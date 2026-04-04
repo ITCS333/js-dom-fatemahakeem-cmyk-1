@@ -32,7 +32,7 @@ function addNewItem() {
  */
 function highlightParagraph() {
   // TODO: Implement this function
-  document.document.querySelector('.content-para').classList.add('highlight');
+  document.querySelector('.content-para').classList.add('highlight');
 }
 
 /**
