@@ -1,8 +1,10 @@
 /**
  * Selects the element with the id 'main-heading' and changes its text content to 'DOM Manipulation Challenge'.
  */
+
 function changeHeadingText() {
   // TODO: Implement this function
+  document.getElementById('main-heading').textContent="DOM Manipulation Challenge";
 }
 
 /**
@@ -10,6 +12,8 @@ function changeHeadingText() {
  */
 function changeBoxColor() {
   // TODO: Implement this function
+  let box = document.getElementById('box-to-modify');
+  box.style.backgroundColor='lightblue';
 }
 
 /**
@@ -17,6 +21,10 @@ function changeBoxColor() {
  */
 function addNewItem() {
   // TODO: Implement this function
+  let eleLi= document.createElement('li');
+  eleLi.textContent='New Item';
+  let eleUl=document.getElementById("item-list");
+  eleUl.appendChild(eleLi);
 }
 
 /**
@@ -24,6 +32,7 @@ function addNewItem() {
  */
 function highlightParagraph() {
   // TODO: Implement this function
+  document.document.querySelector('.content-para').classList.add('highlight');
 }
 
 /**
@@ -31,6 +40,7 @@ function highlightParagraph() {
  */
 function removeElement() {
   // TODO: Implement this function
+  document.getElementById('to-be-removed').remove();
 }
 
 
